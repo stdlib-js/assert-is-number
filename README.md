@@ -24,20 +24,30 @@ limitations under the License.
 
 > Test if a value is a number.
 
+<section class="installation">
 
+## Installation
+
+```bash
+npm install @stdlib/assert-is-number
+```
+
+Alternatively,
+
+-   To load the package in a website via a `script` tag without installation and bundlers, use the [ES Module][es-module] available on the [`esm` branch][esm-url].
+-   If you are using Deno, visit the [`deno` branch][deno-url].
+-   For use in Observable, or in browser/node environments, use the [Universal Module Definition (UMD)][umd] build available on the [`umd` branch][umd-url].
+
+The [branches.md][branches-url] file summarizes the available branches and displays a diagram illustrating their relationships.
+
+</section>
 
 <section class="usage">
 
 ## Usage
 
 ```javascript
-import isNumber from 'https://cdn.jsdelivr.net/gh/stdlib-js/assert-is-number@esm/index.mjs';
-```
-
-You can also import the following named exports from the package:
-
-```javascript
-import { isObject, isPrimitive } from 'https://cdn.jsdelivr.net/gh/stdlib-js/assert-is-number@esm/index.mjs';
+var isNumber = require( '@stdlib/assert-is-number' );
 ```
 
 #### isNumber( value )
@@ -47,7 +57,7 @@ Tests if a `value` is a `number`.
 <!-- eslint-disable no-new-wrappers -->
 
 ```javascript
-import Number from 'https://cdn.jsdelivr.net/gh/stdlib-js/number-ctor@esm/index.mjs';
+var Number = require( '@stdlib/number-ctor' );
 
 var bool = isNumber( 3.14 );
 // returns true
@@ -69,7 +79,7 @@ Tests if a `value` is a primitive `number`.
 <!-- eslint-disable no-new-wrappers -->
 
 ```javascript
-import Number from 'https://cdn.jsdelivr.net/gh/stdlib-js/number-ctor@esm/index.mjs';
+var Number = require( '@stdlib/number-ctor' );
 
 var bool = isNumber.isPrimitive( 3.14 );
 // returns true
@@ -88,7 +98,7 @@ Tests if a `value` is a `Number` object.
 <!-- eslint-disable no-new-wrappers -->
 
 ```javascript
-import Number from 'https://cdn.jsdelivr.net/gh/stdlib-js/number-ctor@esm/index.mjs';
+var Number = require( '@stdlib/number-ctor' );
 
 var bool = isNumber.isObject( 3.14 );
 // returns false
@@ -109,14 +119,9 @@ bool = isNumber.isObject( new Number( 3.14 ) );
 
 <!-- eslint no-undef: "error" -->
 
-```html
-<!DOCTYPE html>
-<html lang="en">
-<body>
-<script type="module">
-
-import Number from 'https://cdn.jsdelivr.net/gh/stdlib-js/number-ctor@esm/index.mjs';
-import isNumber from 'https://cdn.jsdelivr.net/gh/stdlib-js/assert-is-number@esm/index.mjs';
+```javascript
+var Number = require( '@stdlib/number-ctor' );
+var isNumber = require( '@stdlib/assert-is-number' );
 
 var bool = isNumber( 5 );
 // returns true
@@ -132,10 +137,6 @@ bool = isNumber( '5' );
 
 bool = isNumber( null );
 // returns false
-
-</script>
-</body>
-</html>
 ```
 
 </section>
@@ -159,7 +160,7 @@ bool = isNumber( null );
 
 ## Notice
 
-This package is part of [stdlib][stdlib], a standard library with an emphasis on numerical and scientific computing. The library provides a collection of robust, high performance libraries for mathematics, statistics, streams, utilities, and more.
+This package is part of [stdlib][stdlib], a standard library for JavaScript and Node.js, with an emphasis on numerical and scientific computing. The library provides a collection of robust, high performance libraries for mathematics, statistics, streams, utilities, and more.
 
 For more information on the project, filing bug reports and feature requests, and guidance on how to develop [stdlib][stdlib], see the main project [repository][stdlib].
 
