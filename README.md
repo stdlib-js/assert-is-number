@@ -42,13 +42,13 @@ limitations under the License.
 ## Usage
 
 ```javascript
-import isNumber from 'https://cdn.jsdelivr.net/gh/stdlib-js/assert-is-number@esm/index.mjs';
+import isNumber from 'https://cdn.jsdelivr.net/gh/stdlib-js/assert-is-number@v0.1.1-esm/index.mjs';
 ```
 
 You can also import the following named exports from the package:
 
 ```javascript
-import { isObject, isPrimitive } from 'https://cdn.jsdelivr.net/gh/stdlib-js/assert-is-number@esm/index.mjs';
+import { isObject, isPrimitive } from 'https://cdn.jsdelivr.net/gh/stdlib-js/assert-is-number@v0.1.1-esm/index.mjs';
 ```
 
 #### isNumber( value )
@@ -127,7 +127,7 @@ bool = isNumber.isObject( new Number( 3.14 ) );
 <script type="module">
 
 import Number from 'https://cdn.jsdelivr.net/gh/stdlib-js/number-ctor@esm/index.mjs';
-import isNumber from 'https://cdn.jsdelivr.net/gh/stdlib-js/assert-is-number@esm/index.mjs';
+import isNumber from 'https://cdn.jsdelivr.net/gh/stdlib-js/assert-is-number@v0.1.1-esm/index.mjs';
 
 var bool = isNumber( 5 );
 // returns true
