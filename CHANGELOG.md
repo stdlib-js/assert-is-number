@@ -4,7 +4,7 @@
 
 <section class="release" id="unreleased">
 
-## Unreleased (2026-10-21)
+## Unreleased (2026-11-14)
 
 <section class="issues">
 
@@ -24,6 +24,8 @@ This release closes the following issue:
 
 <details>
 
+-   [`85b4e25`](https://github.com/stdlib-js/stdlib/commit/85b4e2501d081cd70a23a79ac38296d30ca0740d) - **docs:** update examples _(by Athan Reines)_
+-   [`a3ba3d7`](https://github.com/stdlib-js/stdlib/commit/a3ba3d7da22c9a13408621b6824af11de313032f) - **docs:** fix comment _(by Athan Reines)_
 -   [`310690f`](https://github.com/stdlib-js/stdlib/commit/310690f5ceaf3ec1d7cae82e66a4748dec4c6781) - **chore:** fix JavaScript lint errors [(#12731)](https://github.com/stdlib-js/stdlib/pull/12731) _(by Suyog, Athan Reines)_
 -   [`342466e`](https://github.com/stdlib-js/stdlib/commit/342466efa3e8837ecd245ff3dd51ef0c40c52ed6) - **bench:** refactor to use string interpolation in `@stdlib/assert` [(#11399)](https:-/github.com/stdlib-js/stdlib/pull/11399) _(by Karan Anand)_
 
